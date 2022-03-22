@@ -26,6 +26,8 @@ https://code.visualstudio.com
 CORS stands for "Cross Origin Resource Sharing" which is a fancy way of trying to protect website resources from being used across websites. Often times, it's a mistake on the setup of the end server but it can be troubling to not be able to access a public REST service because of CORS errors. Fortunately there is a workaround that allows you to forward your requests through a local service to avoid CORS problems. Use the sub directory called "cors_anywhere" and run the command from your prompt or terminal: 
 node cors-anywhere.js
 
+You will then be able to preface your REST URL with: http://localhost:8080/
+
 Note: you'll need Node.js installed first. More info can be found here:
 https://github.com/Rob--W/cors-anywhere
 
