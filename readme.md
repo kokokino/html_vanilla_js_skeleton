@@ -1,7 +1,10 @@
+# Source
+https://github.com/kokokino/html_vanilla_js_skeleton
+
 # Summary
 This is a simple skeleton project (empty workspace) for you to use when tackling javascript challenges either on your own or for the coding part of an interview. 
 
-Simple javascript apps are good for interacting with REST services and having a quick setup to solve problems without a lot of setup. Unfortunately people often get tripped up with security issues preventing their projects from working. This skeleton structure solves most of those pitfalls. 
+Simple javascript apps are good for interacting with REST services and having a quick setup to solve problems without a lot of configuration. Unfortunately people often get tripped up with security issues preventing their projects from working. This skeleton structure solves most of those pitfalls. 
 
 # Web browser
 You will need a web browser. Chrome, Firefox, Safari, Microsoft Edge are all good choices. You probably already have one of these installed. 
@@ -23,12 +26,19 @@ You can use any tool for text editing but avoid word processors like Microsoft W
 https://code.visualstudio.com
 
 # CORS workaround
-CORS stands for "Cross Origin Resource Sharing" which is a fancy way of trying to protect website resources from being used across websites. Often times, it's a mistake on the setup of the end server but it can be troubling to not be able to access a public REST service because of CORS errors. Fortunately there is a workaround that allows you to forward your requests through a local service to avoid CORS problems. Use the sub directory called "cors_anywhere" and run the command from your prompt or terminal: 
+CORS stands for "Cross Origin Resource Sharing" which is a fancy way of trying to protect resources from being used across websites. Often times, it's a mistake on the setup of the server but it can be troubling to not be able to access a public REST service because of CORS errors. Fortunately there is a workaround that allows you to forward your requests through a local service to avoid CORS problems. 
+
+First, install Node.js - there are many ways to do this depending on your operating system. 
+
+Use the sub directory called "cors_anywhere" inside this project. Move into there and from your prompt or terminal do:
+npm install cors-anywhere
+
+Next run the command from your prompt or terminal: 
 node cors-anywhere.js
 
-You will then be able to preface your REST URL with: http://localhost:8080/
+You will then be able to preface your REST URL from within your Javascript app with: http://localhost:8080/
 
-Note: you'll need Node.js installed first. More info can be found here:
+More info about this technique can be found here:
 https://github.com/Rob--W/cors-anywhere
 
 Happy coding!
