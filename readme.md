@@ -15,10 +15,14 @@ You will also need to launch a simple web server. That's because features of you
 First, install Node.js - there are many ways to do this depending on your operating system. 
 
 Next, run this command from your prompt or terminal to have it available no matter where you are:
+```console
 npm install --global http-server
+```
 
 Lastly, dive inside your project and run the following command to launch the webserver
+```console
 http-server -c-1 -p 8000
+```
 
 The -c-1 essentially disables caching (cache up to a second) while the -p sets the port to connect to at 8000.
 
@@ -35,10 +39,14 @@ CORS stands for "Cross Origin Resource Sharing" which is a fancy way of trying t
 First, install Node.js - there are many ways to do this depending on your operating system. 
 
 Use the sub directory called "cors_anywhere" inside this project. Move into there and from your prompt or terminal do:
+```console
 npm install cors-anywhere
+```
 
 Next run the command from your prompt or terminal: 
+```console
 node cors-anywhere.js
+```
 
 You will then be able to preface your REST URL from within your Javascript app with: http://localhost:8080/
 
