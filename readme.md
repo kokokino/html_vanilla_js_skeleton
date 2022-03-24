@@ -10,16 +10,20 @@ Simple javascript apps are good for interacting with REST services and having a 
 You will need a web browser. Chrome, Firefox, Safari, Microsoft Edge are all good choices. You probably already have one of these installed. 
 
 # Web server
-You will also need to launch a simple web server. That's because features of your app won't work accessing files on disk without going through a local web server. Easiest way is with Python. At the time of writing, both Python 3 and 2 are popular and work great. Here's how to launch a server with each one
+You will also need to launch a simple web server. That's because features of your app won't work by accessing files on disk without going through a local web server. Also, many webservers try to cache files which is no good when you are developing. You need the latest file all the time. Many people recommend using Python to run a webserver but they typically have the caching problem. Perhaps the easiest way to get a webserver going is with Node.js and the "http-server" project. 
 
-Python 3:
-python -m http.server 8000
+First, install Node.js - there are many ways to do this depending on your operating system. 
 
-Python 2:
-python -m SimpleHTTPServer 8000
+Next, run this command from your prompt or terminal to have it available no matter where you are:
+npm install --global http-server
+
+Lastly, dive inside your project and run the following command to launch the webserver
+http-server -c-1 -p 8000
+
+The -c-1 essentially disables caching (cache up to a second) while the -p sets the port to connect to at 8000.
 
 For more in-depth discussion see this article:
-https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
+https://github.com/http-party/http-server
 
 # Text Editor
 You can use any tool for text editing but avoid word processors like Microsoft Word. If you don't have a favorite, I suggest Microsoft "Visual Studio Code." It's fast, lean, and works well. It even detects Javascript syntax errors as you type. Get it here: 
