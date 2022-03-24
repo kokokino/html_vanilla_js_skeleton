@@ -19,7 +19,7 @@ Next, run this command from your prompt or terminal to have it available no matt
 npm install --global http-server
 ```
 
-Lastly, dive inside your project and run the following command to launch the webserver
+Lastly, dive inside your project and run the following command to launch the webserver:
 ```console
 http-server -c-1 -p 8000
 ```
@@ -51,7 +51,7 @@ node cors-anywhere.js
 You will then be able to preface your REST URL from within your Javascript app with: http://localhost:8080/
 
 More info about this technique can be found here:
-https://www.npmjs.com/package/cors-anywhere
-https://github.com/Rob--W/cors-anywhere
+1. https://www.npmjs.com/package/cors-anywhere
+2. https://github.com/Rob--W/cors-anywhere
 
 Happy coding!
